@@ -1,0 +1,36 @@
+[user]
+	name = Leo Zhao
+	email = leozhaoqr@gmail.com
+[core]
+	excludesfile = /Users/LeoZhao/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+    st = status
+    br = branch
+    co = checkout
+    ci = commit
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[commit]
+	template = /Users/LeoZhao/.stCommitMsg
